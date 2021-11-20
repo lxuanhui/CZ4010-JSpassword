@@ -137,7 +137,7 @@ STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
