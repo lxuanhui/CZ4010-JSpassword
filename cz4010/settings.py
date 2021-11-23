@@ -124,8 +124,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-AWS_ACCESS_KEY_ID = 'AKIAZUNXJZGG6POT5MLE'
-AWS_SECRET_ACCESS_KEY = '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'
+
 AWS_STORAGE_BUCKET_NAME = 'cz4010-prj-bucket'
 WS_S3_HOST = "s3.ap-southeast-1.amazonaws.com"
 AWS_S3_REGION_NAME = "ap-southeast-1"
