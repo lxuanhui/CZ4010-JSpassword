@@ -4,7 +4,7 @@ Why should I use this service?
 JSPassword focuses on security. We ensure that all passwords stored in our database is either hashed or encryptped before being stored.
 User's main account login are hashed 260000 times and a salt is added befefore being stored in the database.
 User's saved account password are encrypted with AES encryption with their password's hash as the key.
-Connection to our service is secure as well as we use SSL Connection to ensure that any attacker listening to the communication will not be able to get any useful informatio.
+Connection to our service is secure as well as we use SSL Connection to ensure that any attacker listening to the communication will not be able to get any useful information.
 
 The installation for the server is a very long process which we decided to not include here as there were too many steps.
 
