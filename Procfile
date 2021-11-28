@@ -1,1 +1,0 @@
-web: gunicorn cz4010 --log-file -
