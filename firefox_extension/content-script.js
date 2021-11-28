@@ -187,7 +187,7 @@ async function getAccountData()
   let password = await browser.storage.local.get("password");
   var oReq = new XMLHttpRequest();
   oReq.addEventListener("load", reqListener);
-  oReq.open("GET", "https://cz4010.joelng.com/get_accounts?userID="+userID.userID+"&password_hash="+password.password);
+  oReq.open("GET", "https://cz4010.joelng.com/get_accounts?domain=" + window.location.hostname + "&userID="+userID.userID+"&password_hash="+password.password);
   oReq.send();
 }
 autoFill();

@@ -15,6 +15,7 @@ from ast import literal_eval
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import authentication, permissions
+from django.db.models import Q
 import json
 # Create your views here.
 
@@ -113,7 +114,10 @@ class getAccounts(APIView):
         if request.method == 'GET':
             userID = request.GET.get('userID')
             password_hash = request.GET.get('password_hash')
-            qs = accounts.objects.filter(user_id=userID)
+            domain = request.GET.get('domain')
+            print("test1")
+            qs = accounts.objects.filter(Q(user_id=userID),Q(domain=domain)|Q(domain=""))
+            print("test1")
             aescipher = AESCipher(password_hash)
             for data in qs:
                 data.password = aescipher.decrypt(literal_eval(data.password))

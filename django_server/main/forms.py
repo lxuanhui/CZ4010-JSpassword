@@ -14,6 +14,6 @@ class CreateUserForm(UserCreationForm):
 class AccountModelForm(ModelForm):
     class Meta:
         model = accounts
-        fields = ['userName','password']
+        fields = ['userName','password','domain']
         
         
