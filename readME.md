@@ -9,8 +9,8 @@ JSPassword is a password management tool that helps improve one's password secur
 3) Autofill username and password forms
 
 ## How JSPassword Protects Your Data
-JSPassword focuses on security. We ensure that all passwords stored in our database is either hashed or encryptped before being stored.
-User's main account login are hashed 260000 times and a salt is added befefore being stored in the database.
+JSPassword focuses on security. We ensure that all passwords stored in our database is either hashed or encrypted before being stored.
+User's main account login are hashed 260000 times and a salt is added before being stored in the database.
 User's saved account password are encrypted with AES encryption with their password's hash as the key.
 Connection to our service is secure as well as we use SSL Connection to ensure that any attacker listening to the communication will not be able to get any useful information.
 
