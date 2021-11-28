@@ -1,0 +1,45 @@
+{
+
+  "manifest_version": 2,
+  "name": "jsonepass",
+  "version": "1.0",
+
+  "description": "JS onepass.",
+
+  "icons": {
+    "48": "icons/onepass.png"
+  },
+
+
+  "browser_action": {
+    "default_icon": "icons/login.png",
+    "default_title": "JS onepass",
+    "default_popup": "html/login.html"
+  },
+
+
+    "permissions": [
+        "<all_urls>",
+        "tabs",
+        "storage",
+        "nativeMessaging",
+        "clipboardWrite",
+        "contextMenus",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+
+  "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": [
+        "content-script.js",
+        "jquery-3.6.0.min.js"
+      ],
+      "css": [ "skin/content.css" ]
+  }]
+
+
+
+
+
+}
