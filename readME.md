@@ -34,3 +34,5 @@ The database structure can be found in file 'cz4010db'. To use this file, use PG
 Our server uses Django for the webserver
 Cert-bot to get the SSL cert
 Postgres for database
+
+NTU CZ4010 - Topic 4 - Secure and Authenticated Password Management Tool 
